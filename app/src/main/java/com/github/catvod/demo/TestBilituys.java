@@ -26,7 +26,11 @@ public class TestBilituys {
 //        System.out.println(s);
 
         // 搜索内容测试
-        String s = bilituys.searchContent("我", true);
+//        String s = bilituys.searchContent("我", true);
+//        System.out.println(s);
+
+        // 播放内容测试
+        String s = bilituys.playerContent("", "https://www.bilituys.com/biliplay/85267-1-1.html", new ArrayList<>());
         System.out.println(s);
     }
 }
