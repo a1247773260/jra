@@ -15,6 +15,11 @@ public class TestVoflix {
 //        String s = voflix.homeContent(true);
 //        System.out.println(s);
 
+        // 获取首页推荐视频测试
+//        String s = voflix.homeVideoContent();
+//        System.out.println(s);
+
+
         // 分类页面数据测试
 //        HashMap<String, String> map = new HashMap<>();
 //        map.put("area", "中国香港");
