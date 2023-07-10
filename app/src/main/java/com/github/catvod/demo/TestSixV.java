@@ -29,7 +29,8 @@ public class TestSixV {
     public void categoryContent() {
         // 分类页面数据测试
         HashMap<String, String> extend = new HashMap<>();
-        System.out.println(sixV.categoryContent("my_tid_movie", "1", true, extend));
+//        System.out.println(sixV.categoryContent("xijupian", "1", true, extend));
+        System.out.println(sixV.categoryContent("xijupian", "3", true, extend));
     }
 
     @Test
@@ -44,8 +45,6 @@ public class TestSixV {
 
     @Test
     public void searchContent() {
-        // 搜索测试
-        String s = sixV.searchContent("保镖", true);
-        System.out.println(s);
+        System.out.println(sixV.searchContent("保镖", true));
     }
 }
