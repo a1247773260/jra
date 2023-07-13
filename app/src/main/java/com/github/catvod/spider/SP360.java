@@ -349,7 +349,7 @@ public class SP360 extends Spider {
             JSONObject result = new JSONObject()
                     .put("parse", 1)
                     .put("jx", 1)
-                    .put("header", header)
+                    .put("header", header.toString())
                     .put("playUrl", "")
                     .put("url", id);
             return result.toString();
