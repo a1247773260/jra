@@ -21,8 +21,7 @@ public class TestSixV {
     @Test
     public void homeContent() {
         // 首页测试，输出...
-        String s = sixV.homeContent(true);
-        System.out.println(s);
+        System.out.println(sixV.homeContent(true));
     }
 
     @Test
@@ -37,9 +36,9 @@ public class TestSixV {
     public void detailContent() {
         // 详情页面数据测试
         ArrayList<String> ids = new ArrayList<>();
-        ids.add("https://www.6vdy.org/xijupian/20346.html");
-//        ids.add("https://www.6vdy.org/xijupian/20531.html");
-//        ids.add("https://www.6vdy.org/xijupian/20620.html");
+//        ids.add("/xijupian/20346.html");
+//        ids.add("/xijupian/20531.html");
+        ids.add("/xijupian/20620.html");
         System.out.println(sixV.detailContent(ids));
     }
 

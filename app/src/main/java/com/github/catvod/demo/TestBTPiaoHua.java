@@ -1,30 +1,49 @@
 package com.github.catvod.demo;
 
 import com.github.catvod.spider.BTPiaoHua;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class TestBTPiaoHua {
-    public static void main(String[] args) {
-        BTPiaoHua btPiaoHua = new BTPiaoHua();
-        // 首页测试，输出...
-//        String s = btPiaoHua.homeContent(true);
-//        System.out.println(s);
 
-        // 分类页面数据测试
-        String s = btPiaoHua.categoryContent("/dongzuo/", "1", true, new HashMap<>());
-        System.out.println(s);
+    BTPiaoHua btPiaoHua;
 
-        // 详情页面数据测试
-//        ArrayList<String> ids = new ArrayList<>();
-//        ids.add("https://www.xpiaohua.com/column/lianxuju/20210221/51623.html");
-//        String s = btPiaoHua.detailContent(ids);
-//        System.out.println(s);
+    @Before
+    public void init() {
+        btPiaoHua = new BTPiaoHua();
+    }
 
-        // 搜索测试
-//        String s = btPiaoHua.searchContent("我", true);
-//        System.out.println(s);
+    @Test
+    public void homeContent() {
+        System.out.println(btPiaoHua.homeContent(true));
+    }
 
+    @Test
+    public void homeVideoContent() {
+    }
+
+    @Test
+    public void categoryContent() {
+        HashMap<String, String> extend = new HashMap<>();
+        System.out.println(btPiaoHua.categoryContent("/dongzuo/", "1", true, extend));
+    }
+
+    @Test
+    public void detailContent() {
+        ArrayList<String> ids = new ArrayList<>();
+        ids.add("https://www.xpiaohua.com/column/lianxuju/20210221/51623.html");
+        System.out.println(btPiaoHua.detailContent(ids));
+    }
+
+    @Test
+    public void searchContent() {
+        System.out.println(btPiaoHua.searchContent("我", true));
+    }
+
+    @Test
+    public void playerContent() {
     }
 }
